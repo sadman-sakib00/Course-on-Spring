@@ -19,4 +19,11 @@
         <constructor-arg ref="myFortuneService"/>
     </bean>
 
+    <bean id="myCricketCoach"
+            class="com.sakib.learningspring.CricketCoach">
+
+        <property name="fortuneService" ref="myFortuneService" />
+
+    </bean>
+
 </beans>
