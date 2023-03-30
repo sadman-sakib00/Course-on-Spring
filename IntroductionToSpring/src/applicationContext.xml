@@ -7,6 +7,9 @@
 	   		http://www.springframework.org/schema/context
 	   		http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
+    <!-- Load the properties file: sport.properties -->
+    <context:property-placeholder location="classpath:sport.properties"/>
+
     <!-- Define your beans here -->
     <bean id="myFortuneService"
             class="com.sakib.learningspring.HappyFortuneService">
@@ -26,8 +29,8 @@
         <property name="fortuneService" ref="myFortuneService" />
 
         <!--Inject literal values-->
-        <property name="emailAddress" value="sakib@gmail.com" />
-        <property name="team" value="Dhaka" />
+        <property name="emailAddress" value="${coach.email}" />
+        <property name="team" value="${coach.team}" />
 
     </bean>
 

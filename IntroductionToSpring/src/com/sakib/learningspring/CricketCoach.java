@@ -8,7 +8,7 @@ public class CricketCoach implements Coach {
 
     // A constructor with no arguments
     public CricketCoach() {
-        System.out.println("I am in the constructor of CricketCoach");
+        System.out.println("CricketCoach: inside no-arg constructor");
     }
 
     // Setter method
@@ -33,7 +33,7 @@ public class CricketCoach implements Coach {
     }
 
     public void setFortuneService(FortuneService fortuneService) {
-        System.out.println("I am in the setFortuneService method of CricketCoach class");
+        System.out.println("CricketCoach: inside setter method - setFortuneService");
         this.fortuneService = fortuneService;
     }
 
