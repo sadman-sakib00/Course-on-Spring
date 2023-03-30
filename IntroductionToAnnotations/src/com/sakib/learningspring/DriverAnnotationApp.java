@@ -10,10 +10,13 @@ public class DriverAnnotationApp {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         // Get the bean from spring container
-        Coach theCoach = context.getBean("theTennisCoach", Coach.class);
+        Coach theCoach = context.getBean("tennisCoach", Coach.class);
 
         // Call a method on the bean
         System.out.println(theCoach.getDailyWorkout());
+
+        // Call a method to get daily fortune
+        System.out.println(theCoach.getDailyFortune());
 
         // Close the context
         context.close();
