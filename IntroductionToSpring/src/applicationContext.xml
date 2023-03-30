@@ -22,7 +22,12 @@
     <bean id="myCricketCoach"
             class="com.sakib.learningspring.CricketCoach">
 
+        <!-- Set up setter injection-->
         <property name="fortuneService" ref="myFortuneService" />
+
+        <!--Inject literal values-->
+        <property name="emailAddress" value="sakib@gmail.com" />
+        <property name="team" value="Dhaka" />
 
     </bean>
 
