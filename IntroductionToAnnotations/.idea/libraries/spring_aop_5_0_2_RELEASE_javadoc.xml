@@ -22,6 +22,7 @@
       <root url="jar://$PROJECT_DIR$/lib/spring-webflux-5.0.2.RELEASE.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/spring-webmvc-5.0.2.RELEASE.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/spring-websocket-5.0.2.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.annotation-3.1.2.2.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/lib/spring-aop-5.0.2.RELEASE-javadoc.jar!/" />

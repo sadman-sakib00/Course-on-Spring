@@ -2,9 +2,15 @@ package com.sakib.learningspring;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 @Component
+@Scope("singleton")
+//@Scope("prototype")
 public class TennisCoach implements Coach {
 
     @Autowired
@@ -14,6 +20,18 @@ public class TennisCoach implements Coach {
     // Defining a default constructor
     public TennisCoach() {
         System.out.println(">> TennisCoach: Inside the default constructor.");
+    }
+
+    // Defining an init method
+    @PostConstruct
+    public void doMyStartupStuff() {
+        System.out.println(">> TennisCoach: inside of doMyStartupStuff()");
+    }
+
+    // Defining a destroy method
+    @PreDestroy
+    public void doMyCleanupStuff() {
+        System.out.println(">> TennisCoach: inside of doMyCleanupStuff()");
     }
 
     /*
