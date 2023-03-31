@@ -2,7 +2,7 @@ package com.sakib.learningspring;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class DriverAnnotationApp {
+public class LearningAnnotationDependencyApp {
 
     public static void main(String[] args) {
 
